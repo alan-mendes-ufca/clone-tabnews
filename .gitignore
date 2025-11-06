@@ -1,0 +1,124 @@
+# =========================
+# Node / React / Next.js
+# =========================
+
+# Dependências
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# Compilados / Build / Output
+build/
+dist/
+.next/
+out/
+.cache/
+coverage/
+*.tsbuildinfo
+
+# Ambiente / Variáveis de ambiente
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Logs
+logs
+*.log
+*.log.*
+log.txt
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Editor / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.orig
+
+# Testes / Jest / Cypress
+coverage/
+.cypress/
+cypress/screenshots/
+cypress/videos/
+
+# Storybook
+.storybook-out/
+storybook-static/
+
+# Next.js exportações
+.next/
+out/
+
+# Build do Vercel
+.vercel/
+.vercel_build_output/
+
+# Arquivos temporários
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Cache de ferramentas
+.npm/
+.yarn/
+.pnpm-store/
+.cache/
+.eslintcache
+.stylelintcache
+.turbo/
+
+# Imagens e uploads temporários
+uploads/
+*.local
+
+# Configurações específicas de sistema
+*.pid
+*.seed
+*.pid.lock
+
+# Docker
+docker-compose.override.yml
+docker-compose.local.yml
+Dockerfile.local
+.docker/
+.dockerignore
+
+# Misc
+*.tgz
+*.zip
+*.tar
+*.gz
+
+# TypeScript
+*.tsbuildinfo
+
+# Next.js Incremental Static Regeneration cache
+.next/cache
+
+# Prisma (caso use)
+prisma/dev.db
+prisma/migrations/.DS_Store
+
+# VSCode local settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
