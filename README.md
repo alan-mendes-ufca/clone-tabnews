@@ -32,7 +32,7 @@ nvm alias default lts/hydrogen  (nvm apelido padrão lst/hydrogen)
     ##### terminal:
     agora com a variável adicionada ao sistema é possível rodar *npm run dev*
     > Mensagem de erro: ready - started server on 0.0.0.0:3000, url: http://localhost:3000 , error - Project directory could not be found, restart Next.js in your new directory
-        > O servidor levanta, mas cai em seguida.
+        > O servidor levanta, mas cai em seguida pois não existe nenhum conteúdo para ser carregado.
 
 > Para abrir o chatAI basta apertar ctrl+alt+i
 > crtl+l para limpar o terminal
@@ -76,4 +76,4 @@ nvm alias default lts/hydrogen  (nvm apelido padrão lst/hydrogen)
         ```
         
 ## Desafio 1: criar um link público para este projeto, impactar alguém!
-- MENTALIDADADE:
+- MENTALIDADADE: Faça do desenvolvimento uma jornada prazerosa e que, ao final, impacte alguém.
