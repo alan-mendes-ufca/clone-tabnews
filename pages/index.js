@@ -3,7 +3,7 @@
 - Tradicionalmente os componentes iniciam com letra maiúscula. 
 */
 function Home() {
-    return <h1>Te amo meu amor</h1>;
+    return <h1>Rayane, eu amo você. Se você me ama, dá uma risadinha!</h1>;
 }
 
 /* Define o componente padrão */

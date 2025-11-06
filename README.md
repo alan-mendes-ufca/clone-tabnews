@@ -77,3 +77,37 @@ nvm alias default lts/hydrogen  (nvm apelido padrão lst/hydrogen)
         
 ## Desafio 1: criar um link público para este projeto, impactar alguém!
 - MENTALIDADADE: Faça do desenvolvimento uma jornada prazerosa e que, ao final, impacte alguém.
+
+## Git
+- Sistema centralizado x Sistema distribuído.
+    - centralizado: a cópia principal está no servidor e as pessoas *reservam*
+    um arquivo para ser alterado, impedindo outros desenvolvedores de acessarem antes de um *checkout* ser feito.
+
+- Merge, clone
+
+- O git funciona baseando-se em alguns objetos:
+    - tree: árvore de pastas que apontam para arquivos.
+    - blob (Binary Large Object): conteúdo de um arquivo.
+    - commit(compromisso): snapshot
+    - tags: ...
+
+- Estágios que os arquivos passam
+    1.  Modified: um arquivo já salvo pelo git está modificado.
+    2. Staged: área de preparo, que será salvo pelo commit.
+    3. Commit: Cria-se uma snapshot *imutável* com as alterações.
+    4. Untracked.
+    
+
+- Comandos
+    - git status: mudanças desde o último commit.
+    - git add
+    - git log --oneline
+    - git diff
+    - git commit --amend (emendar)
+        - resultou em um conflito com o github, pois o commit emendado já avia sido publicado.
+        opções: merge, rebase, fast-forward only:
+        - *--merge*: tenta mesclar os commits.
+        - *--rebase*: aplica os commits locais por cima dos commits remotos.
+        - *--ff-only*: “só atualize se eu puder simplesmente mover o ponteiro da minha branch para frente — sem criar merge e sem mexer no histórico”.
+    
+> ls -la lista todos os arquivos de forma horizontal, até os escondidos.
