@@ -239,45 +239,53 @@ o sucesso de projetos pessoais baseam-se em dois pilares: moral x técnica.
 
 # O surguimento do `techubufca`
 
-> Como eu vou resgitar um domínio sem saber o que eu quero construir? Bom, eu não sei o que quero criar, mas precisa ser algo que gere valor, onde as pessoas que vão utilizar têm um perfil inovador, acolhedor e construtivo. Algo que tenha ligação com minha faculdade e com os cursos de tecnologia, algo que represente união e que seja construtivo para todos, um meio de conhecimento e networking. Talvez algo que ligue pessoas de todos os cursos de tecnologia da UFCA e gere uma união para o desenvolvimento de projetos, uma **encubadora de projeto ou hub de tecnologia -> TecHubUFCA (techubufca.com.br)**.
-> O que é um hub? Um hub é um ponto de conexão, o objetivo é criar uma comunidade viva, onde: **estudantes da UFCA se conectam, aprendem e criam tecnologia juntos**.
-> Como fazer isso? Criando uma **estrutura de rede social simples**
+> Enquanto estudava sobre a criação de domínios, me veio na cabeça: "Como eu vou resgitar um domínio sem saber o que eu quero construir?". Bom, eu sabia que o que fosse criado precisaria gerar valor, um local de pessoas com perfil inovador, acolhedor e construtivo. Algo que tenha ligação com a faculdade e com os cursos de tecnologia, que represente união e que seja construtivo para todos (conhecimento e networking). Talvez algo que ligue pessoas de todos os cursos de tecnologia da UFCA e gere uma união para o desenvolvimento de projetos, um `mostruário de trabalhos, um hub de tecnologia: TecHubUFCA (techubufca.com.br)`. 
+> O que é um hub? `Um hub é um ponto de conexão, o objetivo é criar uma comunidade viva, onde: estudantes da UFCA se conectam, aprendem e criam sistemas juntos`.
+> Como fazer isso? Criando uma `estrutura de rede social simples`.
+>>>>>>> 1e3decd (O surguimento do techubufca.)
 
 ## Estrutura básica:
 
 - Perfis individuais:
-  - nome + curso + habilidades,
-  - redes sociais,
-  - `score de contribuição (inovação coins 😂) para cada contruibuição open source ou ligação com projetos.`
+  - nome + curso + habilidades;
+  - redes sociais;
+  - `score de contribuição (inovation-coins 😂) para cada contruibuição open source ou ligação com projetos.`
 
-- Páguinas de projeto:
-  - pequena descrição (chamativa)
-  - link do github(o github dos projetos precisa ser organizado para que possa existir a contribuição open source)
-  - contato dos responsáveis
-  - Integração com API do github: `tarefas abertas: issues`.
+- Páginas de projeto:
+  - pequena descrição;
+  - link do github;
+  - contato dos responsáveis pelo sistema;
+  - integração com API do github: `tarefas abertas: issues`.
 
-- Equipes (snake_case, etc)
-  - `Desenvolvimento temático`, equipes especificam ao que vão se dedicar: jogos, desenvolvimento web, dados, etx.
+- Equipes (snake_case, pet_core, topiket, etc)
+  - `Desenvolvimento temático`: jogos, desenvolvimento web, dados, aplicativos, pesquisa, etc.
     Isso permite que novos ingressantes tentem se aproximar da sua área de interesse.
 
 ## Como organizar o conteúdo do site?
 
-- Uma páguina principal com projetos destaque.
-- Páguina com grupos e suas respectivas áreas de estudo.
+- Uma página principal com projetos destaque.
+- Outra com grupos e suas respectivas áreas de estudo.
 - Área de projetos recentes para que novatos não fiquem _escondidos_.
 
 ## Como desenvolver um ambiente realmente colaborativo?
 
-- Criar um estuto simples da plataforma: "Estamos nesse exato momento contruindo um novo local na internet para quem **têm interesse em tecnologia e quer criar maturidade no assunto, vamos nos conectar e contruir experiência, projetos de valor concreto para nossa carreira e futuro da comunidade tec da UFCA.**"
+- `Criar um estatuto simples da plataforma: "Estamos nesse exato momento contruindo um novo local na internet para quem têm interesse em tecnologia e quer criar maturidade no assunto, vamos nos conectar e contruir projetos de valor concreto para nossa carreira e futuro da comunidade tec da UFCA."`
 - Criar um discord, telegram do TecHubUFCA.
-
-# Pontos de atenção
-
-- Curadoria inicial de projetos para serem publicados na plataforma: TCC, iniciativas de Centros Acadêmicos, ou projetos de professores que possam ser "adotados" pela plataforma.
-  `Desenvolver uma base sólida.`
-- TecHubUfca pode vir a se tornar uma empresa júnio, pensando em um futuro não tão distante quando os fundadores se formarem.
 
 # Páguina de 'EM CONSTRUÇÃO'
 
 - Teoria Mc Donalds: Uma ideia ruim gera ideias boas.
   (Vamos almoçar? Aonde? - Ninguém sabe. Mas surguiu uma ideia: Vamos no Mc donalds! Se for pra ir no Mc Donals é melhor a gente x, y ou z!)
+
+# Não confie em serviços.
+
+- Corrigindo, não confie que um serviço terá 100% de uptime, é pouco provável e quase impossível que isso aconteça.
+
+# PoC vs MVP
+
+- Métodos para evitar trabalho desnecessário e desperdício de tempo, buscar aprovação ou sugestões de direção para um produto que não foi desenvolvido completamente.
+- `Formas baratas de confirmar que o que você acredita está certo, após isso encarar o mínimo necessário para que o mundo atribua valor.`
+- Proof of Concept (Prova de conceito)
+  - Esclarecer para qual caminho, ângulo remar com o projeto.
+- Minimum Viable Product (Produto mínimo viável)
+  - Fazer o mínimo bem feito, fazer as features básicas e necessárias do sistema.
