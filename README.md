@@ -236,4 +236,48 @@ o sucesso de projetos pessoais baseam-se em dois pilares: moral x técnica.
 - Como se inserir no bando de dados de um TLD (Top Domain Level)?
   - Operadoras de domínios: hostgator.com, registro.br, etc.
   - nic.br -> registro de todos os domínios do Brasil.
-  > Como eu vou resgitar um domínio sem saber o que eu quero construir?
+
+# O surguimento do `techubufca`
+
+> Como eu vou resgitar um domínio sem saber o que eu quero construir? Bom, eu não sei o que quero criar, mas precisa ser algo que gere valor, onde as pessoas que vão utilizar têm um perfil inovador, acolhedor e construtivo. Algo que tenha ligação com minha faculdade e com os cursos de tecnologia, algo que represente união e que seja construtivo para todos, um meio de conhecimento e networking. Talvez algo que ligue pessoas de todos os cursos de tecnologia da UFCA e gere uma união para o desenvolvimento de projetos, uma **encubadora de projeto ou hub de tecnologia -> TecHubUFCA (techubufca.com.br)**.
+> O que é um hub? Um hub é um ponto de conexão, o objetivo é criar uma comunidade viva, onde: **estudantes da UFCA se conectam, aprendem e criam tecnologia juntos**.
+> Como fazer isso? Criando uma **estrutura de rede social simples**
+
+## Estrutura básica:
+
+- Perfis individuais:
+  - nome + curso + habilidades,
+  - redes sociais,
+  - `score de contribuição (inovação coins 😂) para cada contruibuição open source ou ligação com projetos.`
+
+- Páguinas de projeto:
+  - pequena descrição (chamativa)
+  - link do github(o github dos projetos precisa ser organizado para que possa existir a contribuição open source)
+  - contato dos responsáveis
+  - Integração com API do github: `tarefas abertas: issues`.
+
+- Equipes (snake_case, etc)
+  - `Desenvolvimento temático`, equipes especificam ao que vão se dedicar: jogos, desenvolvimento web, dados, etx.
+    Isso permite que novos ingressantes tentem se aproximar da sua área de interesse.
+
+## Como organizar o conteúdo do site?
+
+- Uma páguina principal com projetos destaque.
+- Páguina com grupos e suas respectivas áreas de estudo.
+- Área de projetos recentes para que novatos não fiquem _escondidos_.
+
+## Como desenvolver um ambiente realmente colaborativo?
+
+- Criar um estuto simples da plataforma: "Estamos nesse exato momento contruindo um novo local na internet para quem **têm interesse em tecnologia e quer criar maturidade no assunto, vamos nos conectar e contruir experiência, projetos de valor concreto para nossa carreira e futuro da comunidade tec da UFCA.**"
+- Criar um discord, telegram do TecHubUFCA.
+
+# Pontos de atenção
+
+- Curadoria inicial de projetos para serem publicados na plataforma: TCC, iniciativas de Centros Acadêmicos, ou projetos de professores que possam ser "adotados" pela plataforma.
+  `Desenvolver uma base sólida.`
+- TecHubUfca pode vir a se tornar uma empresa júnio, pensando em um futuro não tão distante quando os fundadores se formarem.
+
+# Páguina de 'EM CONSTRUÇÃO'
+
+- Teoria Mc Donalds: Uma ideia ruim gera ideias boas.
+  (Vamos almoçar? Aonde? - Ninguém sabe. Mas surguiu uma ideia: Vamos no Mc donalds! Se for pra ir no Mc Donals é melhor a gente x, y ou z!)
