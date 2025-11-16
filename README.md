@@ -1,6 +1,5 @@
-# clone-tabnews
-
-Implementação do www.tabnews.com.br para o cuso.dev
+# jornada-tabnews
+Todos os conhecimentos adquiridos no curso.dev.
 
 > "Se você quiser fazer uma torta de maçã do zero, primeiro você deve inventar o universo" - Carl Sagan. Ou seja, não é necessário criar todas as coisas que você vai utilizar do zero.
 
@@ -324,3 +323,36 @@ o sucesso de projetos pessoais baseam-se em dois pilares: moral x técnica.
   - Esclarecer para qual caminho, ângulo remar com o projeto.
 - Minimum Viable Product (Produto mínimo viável)
   - Fazer o mínimo bem feito, fazer as features básicas e necessárias do sistema.
+
+# Proposta de arquitetura e pastas
+
+- `Simples --> Sofisticado`. Algo que nasce complexo, cresce complexo - no caso podemos relembrar sobre o conceito de desenvolvimento orgânico e impressora 3D (*Over engineering*).
+- "Clico de vida de um desenvolvedor": 
+  ![alt text](imgs/image.png)
+- A principal característica ou `qualidade de um software` é sobre o quão `modificável` ele é.
+- Arquitetura: escopo dos componentes e interação entre eles.
+  - Uma arquitetura simples com ótima `modelagem` faz o sistema ir longe.
+- Arquivos e Pastas: hierarquia de informação.
+  ```
+  . root
+  ├── pages
+  │   └── index.js
+  ├── models
+  │   ├── user.js
+  │   ├── content.js
+  │   └── password.js
+  ├── infra
+  │   ├── database.js
+  │   ├── migrations
+  │   └── provisioning
+  │       └── staging
+  │           └── production
+  ├── tests
+  ├── imgs
+  │   └── image.png
+  ├── package-lock.json
+  ├── package.json
+  └── README.md
+  
+
+  ```
