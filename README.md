@@ -47,7 +47,8 @@ Todos os conhecimentos adquiridos no curso.dev.
 ## Protocolos
 
 - HTTP: Hypertext Transfer Protocol
-  - Como informações web vão ser trocadas entre cliente-servido: requisições.
+  - Como informações web vão ser trocadas entre cliente-servido: requisições e respostas.
+  - Como servidores com vistual hosts, ou seja, que servem várias aplicações sabem qual API retornar? Basicamente, no cabeçalho http, o usuário/navegador define o `host` que se quer ser acessado.
 - FTP: File Transfer Protocol
 - SMTP: Simple Main Transfer Protocol
 - TCP: Transfer Control Protol
@@ -95,7 +96,7 @@ Todos os conhecimentos adquiridos no curso.dev.
 - **Experimente fazer dos acontecimentos da sua vida um curso, um momento de aprendizado - levando a vida de forma mais leve e com perpectiva de evolução.**
 - **Tecnologia x Negócios: é difícil, mas devemos ter perpectiva dessas duas torres. Essa ampla visão, no contexto de uma empresa, permite resolver problemas de forma mais efetiva e menos conflitosa _pensando no impacto que o sistema fará_!**
 - **Tome cuidado quando alguém disser que algo que você faz é um lixo, pois para aquela pessoa realmente pode ser, mas tenha orgulho da sua evolução. Não espere validação das pessoas.**
-- ...
+- Sinta-se confortável com problemas, não existe atalhos para adquirir esse conforto somente experiência e tempo são necessários.
 
 ---
 
@@ -398,6 +399,21 @@ o sucesso de projetos pessoais baseam-se em dois pilares: moral x técnica.
 - Código que executa outros códigos.
 - Identificar `Regressão`.
 - Visual e programática (`continuos integration`).
+- Tipos de testes automatizados:
+  - Pirâmide de testes (raiz):
+  ```
+    End-To-End (UI)
+        |
+        V
+    Integration (Service, Endpoints, "o que os clientes usam.")
+      |
+      V
+    Unit
+  ```
+- Endpoints (Ponto, local final)
+  - Interface: GUI, o que o usuário vê.
+  - API: Interface de programação das aplicações.
+    - Os vínculos de informação por baixo dos panos.
 
 ## Instalar o test runner
 
@@ -406,7 +422,7 @@ o sucesso de projetos pessoais baseam-se em dois pilares: moral x técnica.
 - `npm test` (o comando foi adicionado nos scripts do sistema).
 - `npm test::watch` (comando também salvo nos scripts) - _abre uma janela no terminal onde, de forma monitorada, ao salvar, executa os testes do sistema automaticamente_.
 
-## TDD (Test Driven Development)
+## TDD (Test Driven Development)nt)
 
 - Desenvolvimento Orientado por testes.
 - Exemplo de como escrever testes (`calculator.test.js`)
@@ -455,3 +471,7 @@ test("testingSum(2, '2')", () => {
   expect(calculator.sum(2, "2")).toBe("Error"); // Softcoded, hardcoded
 });
 ```
+
+# Versionamento da API
+
+- Cabeçalho(POST) ou caminho(GET).
