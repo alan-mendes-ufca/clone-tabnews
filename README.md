@@ -583,4 +583,50 @@ test("testingSum(2, '2')", () => {
 
     ```
 
-    - `docker compose -f infra/compose.yaml up` - como o arquivo compose foi movido para o diretório intra/ será necessário ajustar o comando para incializar o container.
+    - como o arquivo compose foi movido para o diretório intra/ será necessário ajustar o comando para incializar o container: `docker compose -f infra/compose.yaml up`.
+    - _Existem formas de simplificar essa inicialização com scripst npm._
+      > Modifiquei os scrips, agora basta rodar: `npm run container:init`, `npn rum postgres`.
+
+# database.js
+
+- Primeiramente ele foi importado para a páguina de status, após isso foi inserido:
+
+  ```js
+  // Objeto literal, não um json. Ele chama métodos/funções, não texto puro(como um json).
+  export default {
+    query: query, // chave:valor
+  };
+  ```
+
+  - O que diabos isso faz? Bom, inicialmente define um objeto padrão de exportação { query:query, }. Mas, afinal, o que é esse objeto? É um objeton Javascript que exporta métodos/funções.
+  - Agora no index.js que importou esse objeto:
+    ```js
+    import db from "../../../../infra/database.js";
+    // como o objeto não é nomeado(na verdade, por conta do modelo de exportação ser 'export default' objeto pode receber um apelido),
+    //  é literal, quem difene seu nome é quem o exporta.
+    ```
+
+# Variáveis de ambiente
+
+- Stateless("Sem estado"): mover a camada de persistência para um outro local, deixando o backend só com as regras de negócio.
+  - O backend vira uma máquina pura, só executa código.
+  - Atualmente as credênciais estão hardcoded, fazendo com que o backend não esteja stateless, se o código for clonado para outro contexto o database local continuará sendo a persistência, para todos os clones:
+    ```js
+    const client = new Client({
+      host: "localhost",
+      port: 5432,
+      user: "postgres",
+      database: "postgres",
+      password: "local_password",
+    });
+    ```
+  - Para deixar isso mais flexível é preciso definir as variáveis de ambiente.
+
+  - `POSTGRES_PASSWORD=local_password npm run dev`.
+    Esse comando define, no env do terminal, a variável de ambiente `POSTGRES_PASSWORD`, apenas para o processo que for rodado **em seguida**: `npm run dev`. Essa não é a melhor forma de se fazer.
+  - **DICA**: Para digitar algo sensível no terminal basta fazer: ` ...command...`.
+    (espaço comando)
+
+  - `dotenv`: carrega as variáveis de ambiente definidas em um arquivo `.env`(na raiz do projeto) no objeto js `process.env`.
+
+  - Por que alterar o `POSTGRES_DATABASE` para `POSTGRES_DB` não gerou erros?
