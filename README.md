@@ -431,6 +431,10 @@ o sucesso de projetos pessoais baseam-se em dois pilares: moral x técnica.
 
 - Desenvolvimento Orientado por testes.
 - Exemplo de como escrever testes (`calculator.test.js`)
+- O TDD é definido por três estágios:
+  - RED: escrever o teste que falhará, que espera algo que awind nãio existe;
+  - GREEN: faz a implementação concreta, fazendo os testes passarem;
+  - BLUE: refatorar o código.
 
 ```js
 test("One", () => {
@@ -666,3 +670,43 @@ test("testingSum(2, '2')", () => {
   }
 }
 ```
+
+---
+
+# Querys parametrizadas
+
+> Segundo a documentação node-postgres: Se estiver passando parâmetros de consulta, evite **concatena-los** diretemente no texto da consulta. Isso frequentimente leva a vulnerabilidade de `SQL injections`.
+
+```js
+/* 
+Forma `segura` de estruturar consultas com um objeto `query`. 
+- A query é pré-compilada pelo banco, ou seja, o banco separa o comando SQL dos dados:
+  - Valida a código de consulta, recebido anteriormente;
+  - Trata dados como dados, não como código SQL.
+*/
+const query = {
+  text: "INTER INTO users(name, email) VALUES($1, $2) RETURNING *",
+  values: ["Alan Mendes Vieira", "alan.mendes@aluno.ufca.edu.br"],
+};
+
+// Forma vulnerável
+
+// input malicioso
+const name = "'; DROP TABLE users; --";
+const email = `INSERT INTO users(name) VALUES('${name}')`;
+
+const invalid_query = `INSERT INTO users(name, email) VALUES ('${name}', '${email}') RETURNING *`;
+
+// Outra forma de formatar essa string
+const invalid_query =
+  "INSERT INTO users(name, email) VALUES ('" +
+  name +
+  "', " +
+  email +
+  "') RETURNING *";
+```
+
+# Atenção
+
+- Diferentemendo do mySQL o postgres, para se ter uma conexão contra o banco, é necessário ter uma tabela associada na solicição.
+- Quando ocorre um erro em uma query, a conexão contra o banco não é fechada!

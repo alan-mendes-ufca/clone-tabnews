@@ -4,22 +4,17 @@ test("GET to /api/v1/status should return 200", async () => {
   expect(response.status).toBe(200);
 
   const responseBody = await response.json();
-  expect(responseBody.updated_at).toBeDefined();
 
-  /*
-    Ao passar um valor nulo para Date, ele retorna a data lançamento do unix.
-    O que, ao fazer uma comparação direta com o que foi enviado no json (null),
-    gera um erro de correspondência.
-  */
+  // updateAt tests
   const parsedUpdatedAt = new Date(responseBody.updated_at).toISOString();
   expect(responseBody.updated_at).toEqual(parsedUpdatedAt);
 
-  contentValidation(responseBody.postgres_version, "object");
-  contentValidation(responseBody.max_connections, "object");
-  contentValidation(responseBody.most_used_connections, "object");
-});
+  // database version test
+  expect(responseBody.dependencies.database.version).toEqual("16.0");
 
-function contentValidation(object, type) {
-  expect(typeof object).toBe(type);
-  expect(object).not.toBeNull();
-}
+  // database max connections test
+  expect(responseBody.dependencies.database.max_connections).toEqual(100);
+
+  // database apened connections test
+  expect(responseBody.dependencies.database.aponed_connections).toEqual(1);
+});
